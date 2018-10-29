@@ -69,6 +69,7 @@ def main():
                 new_curr_image = original_ball + masked_blurred_frame
             else:
                 new_curr_image = curr_frame_blurred
+                
             cv2.circle(new_curr_image,center, 8, (255,0,0))
             cv2.imshow('Result', new_curr_image)
             cv2.imshow('Binary Map', binary_map)
